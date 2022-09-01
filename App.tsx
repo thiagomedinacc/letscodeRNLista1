@@ -21,7 +21,7 @@ export default function App() {
       </View>
 
       <View style = {styles.exercicio}>
-        <Text style = {styles.titulo}> Exercício 3 - Calcula preço e duração da tosa </Text>
+        <Text style = {styles.titulo}> Exercício 3: </Text>
       </View>
 
       <View style = {styles.exercicio}>
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    paddingTop: 40
    // alignItems: 'center',
     //justifyContent: 'center',
   },
