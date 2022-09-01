@@ -8,13 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 1 - Marcação de show da banda </Text>
-        <ConcertCard
-          bandName='Metallica'
-          city='Brasilia'
-          country='Brasil'
-          ticket={{ value: 5.50 }}
-          date={new Date()}
-        />
+
       </View>
       <View style = {styles.exercicio}>
         <Text style= {styles.titulo}> Exercício 2: </Text>
@@ -22,7 +16,7 @@ export default function App() {
 
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 3 - Calcula preço e duração da tosa </Text>
-        <PetClipping porte='pequeno' />
+        <PetClipping porte='grande' />
       </View>
 
       <View style = {styles.exercicio}>

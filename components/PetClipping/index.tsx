@@ -9,23 +9,22 @@ const valores = {
         'grande' : 35
 }
 const duracao = {
-    
-        'pequeno' : 15,
-        'medio' : 24,
-        'grande' : 35
+        'pequeno' : 20,
+        'medio' : 35,
+        'grande' : 50
     
 }
 export default function PetClipping (props : Porte) {
     if (props.porte === 'pequeno')
     return ( 
-        <Text>{`O corte custará ${valores.pequeno} e terá valor de ${duracao.pequeno}`} </Text>
+        <Text>{`O corte custará ${valores.pequeno} reais e durará ${duracao.pequeno} minutos.`} </Text>
     )
     else if (props.porte === 'medio')
     return ( 
-        <Text>{`O corte custará ${valores.medio} e terá valor de ${duracao.medio}`} </Text>
+        <Text>{`O corte custará ${valores.medio} reais e durará ${duracao.medio} minutos.`} </Text>
     )
     else
     return ( 
-        <Text>{`O corte custará ${valores.grande} e terá valor de ${duracao.grande}`} </Text>
+        <Text>{`O corte custará ${valores.grande} reais e durará ${duracao.grande} minutos.`} </Text>
     )
 }
