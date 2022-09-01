@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ConcertCard from './components/ConcertCard';
-import PetClipping from './components/PetClipping';
 
 export default function App() {
   return (
