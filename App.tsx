@@ -5,6 +5,7 @@ import PetClipping from './components/PetClipping';
 
 export default function App() {
   return (
+    
     <View style={styles.container}>
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 1 - Marcação de show da banda </Text>
@@ -22,7 +23,6 @@ export default function App() {
 
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 3 - Calcula preço e duração da tosa </Text>
-        <PetClipping porte='pequeno' />
       </View>
 
       <View style = {styles.exercicio}>
@@ -34,6 +34,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  header : {
+
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
