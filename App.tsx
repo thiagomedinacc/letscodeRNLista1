@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style = {styles.exercicio}>
-        <Text style = {styles.titulo}> Exercício 1 - Marcação de show da banda </Text>
+        <Text style = {styles.titulo}> Exercício 1: </Text>
 
       </View>
       <View style = {styles.exercicio}>
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    paddingTop: 40
    // alignItems: 'center',
     //justifyContent: 'center',
   },
