@@ -8,16 +8,17 @@ export default function App() {
     <View style={styles.container}>
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 1 - Marcação de show da banda </Text>
+        
+      </View>
+      <View style = {styles.exercicio}>
+        <Text style= {styles.titulo}> Exercício 2: </Text>
         <ConcertCard
           bandName='Metallica'
           city='Brasilia'
           country='Brasil'
-          ticket={{ value: 5.50 }}
+          tickets= {[{type: 'standard' , value : 10}, {type: 'platinum', value: 20} , {type: 'vip', value:30}]}
           date={new Date()}
         />
-      </View>
-      <View style = {styles.exercicio}>
-        <Text style= {styles.titulo}> Exercício 2: </Text>
       </View>
 
       <View style = {styles.exercicio}>
