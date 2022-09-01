@@ -1,24 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import ColorDot from './components/ColorDot';
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
 import ConcertCard from './components/ConcertCard';
 import PetClipping from './components/PetClipping';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <StatusBar style="dark" />
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 1 - Marcação de show da banda </Text>
         
       </View>
       <View style = {styles.exercicio}>
         <Text style= {styles.titulo}> Exercício 2 - Adiciona e remove ingressos </Text>
-        <ConcertCard
-          bandName='Metallica'
-          city='Brasilia'
-          country='Brasil'
-          tickets= {[{type: 'standard' , value : 10}, {type: 'platinum', value: 20} , {type: 'vip', value:30}]}
-          date={new Date()}
-        />
       </View>
 
       <View style = {styles.exercicio}>
@@ -26,19 +24,19 @@ export default function App() {
       </View>
 
       <View style = {styles.exercicio}>
-        <Text style = {styles.titulo}> Exercício 4: </Text>
+        <Text style = {styles.titulo}> Exercício 4 - Cria bolinha com input do usuário  </Text>
+        <ColorDot/>
       </View>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const styles =  StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-   // alignItems: 'center',
-    //justifyContent: 'center',
+    paddingTop: 40
   },
   titulo: {
     width: '100%',
