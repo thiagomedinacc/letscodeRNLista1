@@ -11,7 +11,7 @@ export default function App() {
         
       </View>
       <View style = {styles.exercicio}>
-        <Text style= {styles.titulo}> Exercício 2: </Text>
+        <Text style= {styles.titulo}> Exercício 2 - Adiciona e remove ingressos </Text>
         <ConcertCard
           bandName='Metallica'
           city='Brasilia'
@@ -23,7 +23,6 @@ export default function App() {
 
       <View style = {styles.exercicio}>
         <Text style = {styles.titulo}> Exercício 3 - Calcula preço e duração da tosa </Text>
-        <PetClipping porte='pequeno' />
       </View>
 
       <View style = {styles.exercicio}>

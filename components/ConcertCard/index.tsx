@@ -64,8 +64,8 @@ export default function ConcertCard(props: ConcertCardProps) {
             <Text> {props.country}</Text>
             <Text> {props.date.toLocaleDateString()}</Text>
 
-            {props.tickets.map((ticket, key)=> (
-                <View style={{ flexDirection: 'row' }} >
+            {props.tickets.map((ticket, index)=> (
+                <View key={index} style={{ flexDirection: 'row' }} >
                     <TouchableOpacity onPress={ () => handleRemoveIngresso(ticket)} style={styles.botaoRemove}>
                     </TouchableOpacity>
                     <Text > {ticket.type} </Text>
